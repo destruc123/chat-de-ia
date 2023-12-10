@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Consulta Médica de Wallace</title>
+   <link rel="icon" href="virus.ico" type="image/x-icon">
+   <style>
+    body {
+         font-family: 'Arial', sans-serif;
+         text-align: center;
+         margin: 0;
+         padding: 0;
+         background-image: url("corona.jpg");
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         color: white;
+      }
+
+      h1 {
+         color: #333;
+      }
+
+      input {
+         background-color: rgb(76, 62, 162);
+         color: white;
+         width: 100%;
+         padding: 8px;
+         margin: 5px 0 20px;
+         box-sizing: border-box;
+      }
+
+      body {
+         font-family: 'Arial', sans-serif;
+         text-align: center;
+         margin: 20px;
+      }
+
+      h1 {
+         color: #333;
+      }
+
+      label {
+         display: block;
+         margin: 10px 0;
+      }
+
+      input {
+         width: 100%;
+         padding: 8px;
+         margin: 5px 0 20px;
+         box-sizing: border-box;
+      }
+
+      button {
+         background-color: #4CAF50;
+         color: white;
+         padding: 10px 20px;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+      }
+
+      #resultadosEnfermedad, #resultadosSintomas {
+         margin-top: 20px;
+         color: white;
+      }
+
+      footer {
+         background-color: #333;
+         color: white;
+         padding: 10px;
+         position: fixed;
+         bottom: 0;
+         width: 100%;
+      }
+
+   </style>
+</head>
+<body>
+   <h1>Consulta Médica</h1>
+
+   <!-- Sección de Consulta por Enfermedad -->
+   <div>
+      <h2>Consulta por Enfermedad</h2>
+      <label for="enfermedad">Ingrese la enfermedad:</label>
+      <input type="text" id="enfermedad" />
+      <button onclick="consultarSintomas()">Consultar Síntomas</button>
+      <div id="resultadosEnfermedad"></div>
+   </div>
+
+   <!-- Sección de Consulta por Síntomas -->
+   <div>
+      <h2>Consulta por Síntomas</h2>
+      <label for="sintomas">Ingrese tus síntomas:</label>
+      <input type="text" id="sintomas" />
+      <button onclick="consultarEnfermedad()">Consultar Enfermedad</button>
+      <div id="resultadosSintomas"></div>
+   </div>
+
+   <footer>
+    © 2023 Wallace - Todos los derechos reservados a cesar
+ </footer>
+
+   <script src="main.js"></script>
+</body>
+</html>
